@@ -6,7 +6,9 @@ import { hideBin } from 'yargs/helpers'
 const argv = yargs(hideBin(process.argv)).argv;
 
 async function login() {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    });
     const page = await browser.newPage();
 
     console.log('LOGIN: opening login page');
