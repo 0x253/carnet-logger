@@ -1,0 +1,17 @@
+{
+  "name": "carnet-logger",
+  "version": "0.0.1",
+  "description": "Simple logger to query the charging status of electric cars of Volkswagen",
+  "author": "Christoph Mayerhofer",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {},
+  "dependencies": {
+    "node-fetch": "^3.0.0",
+    "puppeteer": "^10.4.0",
+    "yargs": "^17.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
