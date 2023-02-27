@@ -59,7 +59,7 @@ async function login() {
 async function getApiAccessToken(loginAccessToken) {
     console.log('API: exchange login access token for API access token');
 
-    const response = await fetch('https://myvw-idk-token-exchanger.apps.emea.vwapps.io/token-exchange?isWcar=true', {
+    const response = await fetch('https://myvw-idk-token-exchanger-prod.apps.mega.cariad.cloud/token-exchange?isWcar=true', {
         headers: {
             origin: 'https://www.myvolkswagen.net',
             referer: 'https://www.myvolkswagen.net/',
